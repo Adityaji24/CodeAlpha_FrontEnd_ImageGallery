@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Image Gallery</title>
+  <link rel="stylesheet" href="imagestyles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">Image<span>Gallery</span></div>
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Image Gallery -->
+  <div class="container">
+    <h1>Interactive Image Gallery</h1>
+    <p>Search for images by their title</p>
+
+    <div class="search-bar">
+      <input type="text" id="search-input" placeholder="Search by title..." oninput="liveSearchImage()">
+      <button onclick="searchImage()">Search</button>
+      <button onclick="resetSearch()">Reset</button>
+      <button onclick="showRandomImage()">Random Image</button>
+    </div>
+
+    <div id="gallery" class="gallery"></div>
+  </div>
+
+  <!-- Additional Content -->
+  <div class="extra-content">
+    <div class="content-section">
+      <h2>Featured Images</h2>
+      <p>Explore some of our handpicked collections.</p>
+    </div>
+
+    <div class="content-section" id="about">
+      <h2>About Us</h2>
+      <p>Welcome to the Interactive Image Gallery. We provide a seamless platform to search, view, and explore your favorite images.</p>
+    </div>
+
+    <div class="content-section" id="contact">
+      <h2>Contact Us</h2>
+      <p>Have any questions? Feel free to reach out!</p>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2024 Image Gallery | Designed with <i class="fas fa-heart"></i> by CodeAlpha</p>
+  </footer>
+
+  <script src="imagescript.js"></script>
+</body>
+</html>
